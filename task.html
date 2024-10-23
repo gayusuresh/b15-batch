@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+    border:5px solid rgb(175, 146, 146);
+    font-size:2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-areas: 'h h h h h'
+    'm ma ma ma s'
+    'f f f f f';
+    gap:20px;
+    grid-template-rows: 10vh 80vh 10vh;
+  
+            
+        }
+         .container div {
+            padding: 20px;
+            font-size: 30px;
+            display: flex;
+       justify-content: center;
+        align-items: center;
+
+        }
+        .item1
+        {
+
+    background-color: rgb(42, 165, 58);
+     grid-area: h;
+      }
+      .item2
+        {
+
+    background-color: brown;
+     grid-area: m;
+      }
+      .item3
+        {
+
+    background-color: rgb(71, 42, 165);
+     grid-area: ma;
+      }
+      .item4
+        {
+
+    background-color: rgb(126, 123, 135);
+     grid-area: s;
+      }
+      .item5
+        {
+
+    background-color: rgb(190, 105, 21);
+     grid-area: f;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">header</div>
+        <div class="item2">menu</div>
+        <div class="item3">main</div>
+        <div class="item4">sidebar</div>
+        <div class="item5">footer</div>
+    </div>
+</body>
+</html>

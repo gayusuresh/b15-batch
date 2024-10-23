@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .para1
+        {
+            background-color: aqua;
+        }
+        .para2
+        {
+            background-color: blueviolet;
+        }
+        .para3
+        {
+            background-color: burlywood;
+        }
+        /*min-width:break point that means its a starting position
+        max-width: its a ending position*/
+        @media(min-width:801px) and (max-width:1000px)
+        {
+            .container p
+            {
+                float: left;
+                width:30%;
+                padding: 10px;
+            }
+        }
+        @media print{
+         .container p
+         {
+            background-color:none;
+            font-size:2em;
+         }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nisi culpa eligendi quisquam quaerat voluptate magnam recusandae ex, atque voluptatibus laboriosam itaque perferendis voluptas earum modi omnis perspiciatis cumque voluptatem?</p>
+        <p class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nisi culpa eligendi quisquam quaerat voluptate magnam recusandae ex, atque voluptatibus laboriosam itaque perferendis voluptas earum modi omnis perspiciatis cumque voluptatem?</p>
+        <p class="para3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nisi culpa eligendi quisquam quaerat voluptate magnam recusandae ex, atque voluptatibus laboriosam itaque perferendis voluptas earum modi omnis perspiciatis cumque voluptatem?</p>
+
+    </div>
+</body>
+</html>

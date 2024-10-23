@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container
+        {
+            display: grid;
+            grid-template-columns: repeat(5 ,1fr);
+            gap:10px;
+            margin:20px;
+
+        }
+        div{
+            position: relative;
+        }
+        div a{
+            position: absolute;
+            left:20px;
+            top:20px;
+        }
+        #one
+        {
+            position: absolute;
+            left:20px;
+            top:20px; 
+            font-size: 1.5em;
+        }
+        #two
+        {
+            position: absolute;
+            left:20px;
+            top:40px; 
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+<div>
+   <a  id="one" href="#">Crime</a>
+   <a id ="two" href="#">Gujarat ATS busts drug manufacturing</a>
+   <img src="https://images.hindustantimes.com/img/2024/07/18/550x309/One-of-the-accused-was-staying-on-the-42nd-floor-o_1711739684795_1721297712642.jpg" width="300" height="200">
+  </div>  
+  <div>
+    <a  id="one" href="#">India</a>
+    <a id ="two" href="#">Mallikarjun Kharge attacks Narendra Modi over Dibrugarh Express accident: ‘Leaves no opportunity for…</a>
+    <img src="https://images.hindustantimes.com/img/2024/07/18/550x309/modi-kharge-pti_1707381875587_1721305933538.jpeg" width="300" height="200">
+   </div>  
+</div>
+</body>
+</html>

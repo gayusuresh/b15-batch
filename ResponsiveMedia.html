@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box
+        {
+            text-align: center;
+            background-color: rgb(45,67,90);
+            color:white;
+            font-size:50px;
+        }
+        @media(min-width:400px) and (max-width:500px)
+        {
+            #box1
+            {
+                display: block;
+                background-color: yellow;
+            }
+        }
+        @media(min-width:500px) and (max-width:600px)
+        {
+            #box2
+            {
+                display: block;
+                background-color: rgb(60, 0, 255);
+            }
+        }
+        @media(min-width:600px) and (max-width:700px)
+        {
+            #box3
+            {
+                display: block;
+                background-color: rgb(138, 135, 149);
+            }
+        }
+        @media(min-width:800px) and (max-width:900px)
+        {
+            #box4
+            {
+                display: block;
+                background-color: rgb(255, 72, 0);
+            }
+        }
+        @media(min-width:900px) and (max-width:1000px)
+        {
+            #box5
+            {
+                display: block;
+                background-color: rgb(255, 0, 208);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">windows</div>
+    <div class="box" id="box2">linux</div>
+    <div class="box" id="box3">andriod</div>
+    <div class="box" id="box4">mac</div>
+    <div class="box" id="box5">phone</div>
+
+</body>
+</html>

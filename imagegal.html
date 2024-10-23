@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Layout
+        {
+            display: grid;
+    border:5px solid rgb(175, 146, 146);
+    font-size:2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-areas: 'h h h h h'
+    'n m m m s'
+    'f f f f f';
+    gap:20px;
+    grid-template-rows: 10vh 80vh 10vh;
+  }
+.Layout div
+{
+display: flex;
+justify-content: center;
+align-content: center;
+}
+.header {
+    grid-area: h;
+    background-color: aqua;
+
+}
+.section
+{
+    grid-area: n;
+    background-color: rgb(51, 0, 255);
+
+}
+.main
+{
+    grid-area: m;
+    background-color: rgb(91, 92, 92);
+
+}
+.sector
+{
+    grid-area: s;
+    background-color: rgb(255, 208, 0);
+
+}
+.footer
+{
+    grid-area: f;
+    background-color: rgb(17, 255, 0);
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="Layout">
+      <div class="header">My Heading</div>
+      <div class="section">section</div>
+      <div class="main">main</div>
+      <div class="sector">sector</div>
+      <div class="footer">footer</div>
+      </div>
+    
+</body>
+</html>
